@@ -66,6 +66,41 @@ Make sure you have the following tools installed:
 
 The Strapi admin panel should be available at [http://localhost:1337/admin](http://localhost:1337/admin). Adjust the port if necessary.
 
+
+<br />
+<br />
+<strong>✨ WebSocket Server Code <code>(server.js)</code></strong></summary>
+<p>
+
+```js
+const WebSocket = require("ws");
+
+const wss = new WebSocket.Server({ port: 8080 }, () => {
+    console.log("WebSocket server started on port 8080");
+});
+
+wss.on("connection", (ws) => {
+    console.log("New client connected");
+
+    ws.on("message", (message) => {
+        console.log(`Received message: ${message}`);
+
+        // Send the received message back to the client
+        ws.send(`Server: ${message}`);
+    });
+
+    ws.on("close", () => {
+        console.log("Client disconnected");
+    });
+
+    ws.onerror = (error) => {
+        console.error("WebSocket error:", error);
+    };
+});
+
+```
+
+
  <br />
  <br />
 <p align="center">
