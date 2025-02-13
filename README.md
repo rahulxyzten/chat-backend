@@ -4,7 +4,7 @@
 
 <div align="center">
   <img src="https://img.shields.io/badge/Repository%20Status-Active-dark%20green.svg" alt="repository_status">
-  <img src="https://img.shields.io/badge/Website%20Status-Online-green" alt="website_status">
+  <img src="https://img.shields.io/badge/Server%20Status-Online-green" alt="website_status">
   <img src="https://img.shields.io/badge/Author-Rahul%20Behera-blue.svg" alt="author">
   <img src="https://img.shields.io/badge/Last%20Updated-13%20February%202025-yellow.svg" alt="last_updated">
 </div>
