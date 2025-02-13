@@ -18,6 +18,8 @@ This repository contains the backend for the Chat Application. It comprises two 
 2. **Strapi Backend:** A headless CMS (built with Strapi) that manages content, user data, and can be extended to provide additional API endpoints for your application.
 
 These components work together with the Chat Frontend (built with Next.js and Tailwind CSS) to provide real-time chat functionality.
+<br/>
+This repository contains only the backend part of the chat application. Find the front-end code of the application here. [(frontend repo)](https://github.com/rahulxyzten/chat-frontend)
 
 <br>
 <h3 align="center">🛠️ Built With</h3>
